@@ -6,13 +6,14 @@ import {useHistory} from 'react-router-dom';
 function MovieItem({movie}) {
 
     const history = useHistory();
+    const dispatch = useDispatch();
 
     
 
     const getMovieDetails = () => {
-        console.log('clicked');
+        console.log(movie.id);
         history.push('/details');
-
+        dispatch({ type: 'GET_MOVIE_DETAILS'})
         
     }
     return (
