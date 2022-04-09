@@ -1,18 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 .movieCard {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
-  margin: 2px;
+  margin: 4px;
   border: 2px;
   background-color: black;
   color: white;
   width: 200px;
+  font-family: Helvetica, sans-serif;
 }
 
 .movieCard:hover {
