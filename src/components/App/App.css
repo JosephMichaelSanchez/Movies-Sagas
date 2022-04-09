@@ -1,15 +1,16 @@
 .App {
   text-align: center;
   font-family: Helvetica, sans-serif;
+  padding-top: 25px;
 }
 
 
-.App-header {
+/* .App-header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
-}
+} */
 
 .App-title {
   font-size: 1.5em;

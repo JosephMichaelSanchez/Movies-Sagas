@@ -22,9 +22,14 @@ body {
 }
 
 .movies{
-background-color: bisque;
+background-color: rgb(184, 57, 14);
 }
 
 .movieTitle {
   overflow-wrap: break-word;
+}
+
+.nowShowing {
+  background-color: black;
+  color: white;
 }
