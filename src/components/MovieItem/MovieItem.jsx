@@ -1,20 +1,23 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 
-function MovieItem({movie}) {
+function MovieItem({ movie }) {
 
     const history = useHistory();
     const dispatch = useDispatch();
 
-    
+
 
     const getMovieDetails = () => {
+
+        // let theId = movie.id;
+
         console.log(movie.id);
         history.push('/details');
-        dispatch({ type: 'GET_MOVIE_DETAILS'})
-        
+        dispatch({ type: 'GET_MOVIE_DETAILS', payload: movie.id })
+
     }
     return (
         <>
