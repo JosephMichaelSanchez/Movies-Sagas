@@ -22,7 +22,9 @@ function MovieItem({ movie }) {
     return (
         <>
             <card className="movieCard" key={movie.id} >
-                <h3>{movie.title}</h3>
+                <div className="movieTitle">
+                    <h4>{movie.title}</h4>
+                </div>
                 <img onClick={getMovieDetails} src={movie.poster} alt={movie.title} />
             </card>
         </>
