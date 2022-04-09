@@ -33,3 +33,7 @@ background-color: rgb(184, 57, 14);
   background-color: black;
   color: white;
 }
+
+#selectedMovie {
+  background-color: aliceblue;
+}

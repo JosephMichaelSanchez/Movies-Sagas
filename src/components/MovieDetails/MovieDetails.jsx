@@ -22,7 +22,7 @@ function MovieDetails() {
 
     return (
         <>
-            
+            <div id="selectedMovie">
             <h2>{movie.title}</h2>
             <img src={movie.poster} alt={movie.title} />
             <p>{movie.description}</p>
@@ -33,6 +33,7 @@ function MovieDetails() {
                 ))}
             </ul>
             <button onClick={backToList}>BACK TO LIST</button>
+            </div>
         </>
     )
 
