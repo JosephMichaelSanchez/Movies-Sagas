@@ -22,8 +22,8 @@ function MovieDetails() {
 
     return (
         <>
-            <h2>Movie Details Page</h2>
-            <p>{movie.title}</p>
+            
+            <h2>{movie.title}</h2>
             <img src={movie.poster} alt={movie.title} />
             <p>{movie.description}</p>
 
