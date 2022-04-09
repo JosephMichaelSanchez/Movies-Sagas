@@ -16,8 +16,7 @@ function* rootSaga() {
     yield takeEvery('FETCH_MOVIES', fetchAllMovies);
     yield takeEvery('GET_MOVIE_DETAILS', movieDetailGetter);
     
-
-}
+};
 
 function* movieDetailGetter(action) {
     const id = action.payload
@@ -26,6 +25,13 @@ function* movieDetailGetter(action) {
         yield put({type: 'SET_DETAILS', payload: movie})
     } catch {
         console.log('error getting details');
+        
+    }
+    try {
+        const genres = yield axios.get(`/api/genre/${id}`)
+        yield put({type: 'SET_GENRES', payload: genres})
+    } catch {
+        console.log('error getting genres');
         
     }
 }
@@ -69,7 +75,7 @@ const movies = (state = [], action) => {
 const genres = (state = [], action) => {
     switch (action.type) {
         case 'SET_GENRES':
-            return action.payload;
+            return action.payload.data;
         default:
             return state;
     }
