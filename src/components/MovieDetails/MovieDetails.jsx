@@ -28,6 +28,7 @@ function MovieDetails() {
                 <div className="trailerAndPoster">
                     <ReactPlayer url={movie.trailer} /> <img className="poster" src={movie.poster} alt={movie.title} />
                 </div>
+                <div>
                 <p>{movie.description}</p>
 
                 <ul>
@@ -35,6 +36,7 @@ function MovieDetails() {
                         <p key={i} className="genreList">{genre.name}</p>
                     ))}
                 </ul>
+                </div>
                 <button className="backButton" onClick={backToList}>BACK TO LIST</button>
             </div>
             <div>

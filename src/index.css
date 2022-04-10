@@ -41,8 +41,9 @@ background-color: rgb(184, 57, 14);
 
 #selectedMovie {
   padding-bottom: 400px;
-  background-image: url(https://media.npr.org/assets/img/2020/05/05/plazamarqueeduringclosure_custom-965476b67c1a760bdb3e16991ce8d65098605f62-s800-c85.webp);
-  background-position: center;
+  /* background-image: url(https://media.npr.org/assets/img/2020/05/05/plazamarqueeduringclosure_custom-965476b67c1a760bdb3e16991ce8d65098605f62-s800-c85.webp);
+  background-position: center; */
+  
 }
 
 .backButton {
@@ -71,4 +72,8 @@ background-color: rgb(184, 57, 14);
 
 .genreList {
   justify-content: center;
+}
+
+.movieDesc {
+  background-color: black;
 }
