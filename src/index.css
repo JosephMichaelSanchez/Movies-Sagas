@@ -35,5 +35,18 @@ background-color: rgb(184, 57, 14);
 }
 
 #selectedMovie {
-  background-color: aliceblue;
+  padding-bottom: 400px;
+}
+
+.backButton {
+  font-size: 24px;
+  background-color: #4CAF50;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid white;
+}
+
+.backButton:hover {
+  background-color: white;
+  color: black;
 }

@@ -32,7 +32,7 @@ function MovieDetails() {
                     <li key={i}>{genre.name}</li>
                 ))}
             </ul>
-            <button onClick={backToList}>BACK TO LIST</button>
+            <button className="backButton" onClick={backToList}>BACK TO LIST</button>
             </div>
         </>
     )
