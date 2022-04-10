@@ -8,6 +8,7 @@ function MovieList() {
     const dispatch = useDispatch();
     const movies = useSelector(store => store.movies);
 
+    // dispatch to watcher saga on page load
     useEffect(() => {
         dispatch({ type: 'FETCH_MOVIES' });
     }, []);
@@ -18,6 +19,7 @@ function MovieList() {
                 
             </div>
             <section className="movies">
+                {/* loop through movies, pass them to the MovieItems as props */}
                 {movies.map(movie => {
                     return (<MovieItem
                         key={movie.id}

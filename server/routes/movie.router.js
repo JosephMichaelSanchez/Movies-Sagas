@@ -16,7 +16,7 @@ router.get('/', (req, res) => {
 
 });
 
-// get movie details
+// get movie details of the movie matching the id
 router.get('/:id', (req, res) => {
 
   const query = `SELECT * FROM movies WHERE "id" = $1`;

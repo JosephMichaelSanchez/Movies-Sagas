@@ -13,22 +13,29 @@ import axios from 'axios';
 
 // Create the rootSaga generator function
 function* rootSaga() {
+    // call function to get the movies
     yield takeEvery('FETCH_MOVIES', fetchAllMovies);
+    // call function to get the details for a specific movie
     yield takeEvery('GET_MOVIE_DETAILS', movieDetailGetter);
     
 };
 
+// function to get details for a specific movie
 function* movieDetailGetter(action) {
     const id = action.payload
     try {
+        // get the details of the movie matching the id
         const movie = yield axios.get(`/api/movie/${id}`)
+        // put results in detailsReducer
         yield put({type: 'SET_DETAILS', payload: movie})
     } catch {
         console.log('error getting details');
         
     }
     try {
+        // get the genres of the movie matching the id
         const genres = yield axios.get(`/api/genre/${id}`)
+        //  put the results in the genres reducer
         yield put({type: 'SET_GENRES', payload: genres})
     } catch {
         console.log('error getting genres');
@@ -49,6 +56,7 @@ function* fetchAllMovies() {
         
 }
 
+// holds the details of a specific movie 
 const detailsReducer = ( state = [], action) => {
     switch (action.type) {
         case 'SET_DETAILS':

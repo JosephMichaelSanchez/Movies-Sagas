@@ -9,18 +9,21 @@ function MovieItem({ movie }) {
     const dispatch = useDispatch();
 
 
-
+    // function to dispatch to watcher saga and push user to details page
     const getMovieDetails = () => {
 
-        // let theId = movie.id;
+
 
         console.log(movie.id);
+        // push user to details page
         history.push('/details');
+        // dispatch to the watcher saga with id of movie clicked as payload
         dispatch({ type: 'GET_MOVIE_DETAILS', payload: movie.id })
 
     }
     return (
         <>
+            {/* movies will display as cards. clicking the image will call the getMovieDetails function */}
             <card className="movieCard" key={movie.id} >
                 <div className="movieTitle">
                     <h4>{movie.title}</h4>
