@@ -3,7 +3,7 @@
 ## Description
 *Weekend Challenge #6*
 
-**Now Showing** is an application that generates a list of movies from a database. Users can click an image of the movie's poster, at which time time they are directed to a *Details* page with more information about that movie. Details included on that page include, an embedded video of a trailer for the movie, plot description, and the movie's genres.
+**Now Showing!** is an application that generates a list of movies from a database. Users can click an image of the movie's poster, at which time time they are directed to a *Details* page with more information about that movie. Details included on that page include, an embedded video of a trailer for the movie, plot description, and the movie's genres.
 
 [![SS1.png](https://i.postimg.cc/fb1MY13g/SS1.png)](https://postimg.cc/DWdVTjPq)
 
