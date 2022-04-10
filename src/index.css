@@ -14,6 +14,7 @@ body {
   color: white;
   width: 200px;
   font-family: Helvetica, sans-serif;
+  font-size: 15px;
 }
 
 .movieCard:hover {
@@ -30,12 +31,18 @@ background-color: rgb(184, 57, 14);
 }
 
 .nowShowing {
-  background-color: black;
-  color: white;
+  background-image: url(https://pngset.com/images/film-strip-background-fence-transparent-png-1484011.png);
+  background-position: center;
+  color: rgb(47, 163, 34);
+  mix-blend-mode: difference;
+  font-size: 25px;
+
 }
 
 #selectedMovie {
   padding-bottom: 400px;
+  background-image: url(https://media.npr.org/assets/img/2020/05/05/plazamarqueeduringclosure_custom-965476b67c1a760bdb3e16991ce8d65098605f62-s800-c85.webp);
+  background-position: center;
 }
 
 .backButton {
@@ -44,9 +51,24 @@ background-color: rgb(184, 57, 14);
   text-align: center;
   border-radius: 8px;
   border: 2px solid white;
+  justify-content: center;
 }
 
 .backButton:hover {
-  background-color: white;
+  background-color: red;
   color: black;
+}
+
+.trailerAndPoster {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.poster {
+  align-self: center;
+}
+
+.genreList {
+  justify-content: center;
 }

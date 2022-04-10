@@ -5,7 +5,7 @@ import MovieDetails from '../MovieDetails/MovieDetails';
 
 function App() {
   return (
-    <div className="App nowShowing" >
+    <div id="firstHeader" className="App" >
       <h1>Now Showing!</h1>
       <Router>        
         <Route path="/" exact>

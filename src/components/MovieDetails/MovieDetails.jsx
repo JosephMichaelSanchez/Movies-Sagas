@@ -25,13 +25,14 @@ function MovieDetails() {
         <>
             <div id="selectedMovie">
                 <h2>{movie.title}</h2>
-                <ReactPlayer url={movie.trailer} />
-                <img src={movie.poster} alt={movie.title} />
+                <div className="trailerAndPoster">
+                    <ReactPlayer url={movie.trailer} /> <img className="poster" src={movie.poster} alt={movie.title} />
+                </div>
                 <p>{movie.description}</p>
 
                 <ul>
                     {genres.map((genre, i) => (
-                        <li key={i}>{genre.name}</li>
+                        <p key={i} className="genreList">{genre.name}</p>
                     ))}
                 </ul>
                 <button className="backButton" onClick={backToList}>BACK TO LIST</button>
