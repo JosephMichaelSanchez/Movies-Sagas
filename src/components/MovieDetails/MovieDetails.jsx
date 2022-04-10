@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import ReactPlayer from 'react-player'
 
 function MovieDetails() {
 
@@ -22,17 +23,23 @@ function MovieDetails() {
 
     return (
         <>
-            
-            <h2>{movie.title}</h2>
-            <img src={movie.poster} alt={movie.title} />
-            <p>{movie.description}</p>
+            <div id="selectedMovie">
+                <h2>{movie.title}</h2>
+                <div className="trailerAndPoster">
+                    <ReactPlayer url={movie.trailer} /> <img className="poster" src={movie.poster} alt={movie.title} />
+                </div>
+                <p>{movie.description}</p>
 
-            <ul>
-                {genres.map((genre, i) => (
-                    <li key={i}>{genre.name}</li>
-                ))}
-            </ul>
-            <button onClick={backToList}>BACK TO LIST</button>
+                <ul>
+                    {genres.map((genre, i) => (
+                        <p key={i} className="genreList">{genre.name}</p>
+                    ))}
+                </ul>
+                <button className="backButton" onClick={backToList}>BACK TO LIST</button>
+            </div>
+            <div>
+            </div>
+
         </>
     )
 

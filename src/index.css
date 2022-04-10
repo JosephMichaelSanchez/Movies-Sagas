@@ -1,5 +1,74 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Helvetica, sans-serif;
+}
+
+.movieCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 4px;
+  border: 2px;
+  background-color: black;
+  color: white;
+  width: 200px;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.movieCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transform: scale(1.1);
+}
+
+.movies{
+background-color: rgb(184, 57, 14);
+}
+
+.movieTitle {
+  overflow-wrap: break-word;
+}
+
+.nowShowing {
+  background-image: url(https://pngset.com/images/film-strip-background-fence-transparent-png-1484011.png);
+  background-position: center;
+  color: rgb(47, 163, 34);
+  mix-blend-mode: difference;
+  font-size: 25px;
+
+}
+
+#selectedMovie {
+  padding-bottom: 400px;
+  background-image: url(https://media.npr.org/assets/img/2020/05/05/plazamarqueeduringclosure_custom-965476b67c1a760bdb3e16991ce8d65098605f62-s800-c85.webp);
+  background-position: center;
+}
+
+.backButton {
+  font-size: 24px;
+  background-color: #4CAF50;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid white;
+  justify-content: center;
+}
+
+.backButton:hover {
+  background-color: red;
+  color: black;
+}
+
+.trailerAndPoster {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.poster {
+  align-self: center;
+}
+
+.genreList {
+  justify-content: center;
 }
